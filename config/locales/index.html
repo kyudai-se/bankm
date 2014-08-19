@@ -1,0 +1,2122 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="   ">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>rails-i18n/rails/locale at master · svenfuchs/rails-i18n · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="svenfuchs/rails-i18n" name="twitter:title" /><meta content="rails-i18n - Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff" name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/2208?v=2&amp;s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/2208?v=2&amp;s=400" property="og:image" /><meta content="svenfuchs/rails-i18n" property="og:title" /><meta content="https://github.com/svenfuchs/rails-i18n" property="og:url" /><meta content="rails-i18n - Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff" property="og:description" />
+
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="760D54D3:7B5E:1615ECD2:53F2D3EB" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="RkBaI/V5gy/rsz83Uwg41/iCh04ZjWhNV0JYpxRCZe5EStr/JqwQ/OgEuTgd5uI/Sm4CyAH1kjxxc+enVKvMBQ==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-e3c1d787af4268efb148333bb4e620cf577eb0ba.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-6d76cdf512195aeb63febdf333fd2c95bf623fad.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+    <meta http-equiv="x-pjax-version" content="120137975d6705fb768224ee02bf9c43">
+
+      
+  <meta name="description" content="rails-i18n - Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff">
+
+
+  <meta content="2208" name="octolytics-dimension-user_id" /><meta content="svenfuchs" name="octolytics-dimension-user_login" /><meta content="38867" name="octolytics-dimension-repository_id" /><meta content="svenfuchs/rails-i18n" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="38867" name="octolytics-dimension-repository_network_root_id" /><meta content="svenfuchs/rails-i18n" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/svenfuchs/rails-i18n/commits/master.atom" rel="alternate" title="Recent Commits to rails-i18n:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Fsvenfuchs%2Frails-i18n%2Ftree%2Fmaster%2Frails%2Flocale">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+          <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+
+<div class="commandbar">
+  <span class="message"></span>
+  <input type="text" data-hotkey="s, /" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+    data-repo="svenfuchs/rails-i18n"
+  >
+  <div class="display hidden"></div>
+</div>
+
+    <input type="hidden" name="nwo" value="svenfuchs/rails-i18n">
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked">
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global">
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+
+  <li>
+      <a href="/login?return_to=%2Fsvenfuchs%2Frails-i18n"
+    class="minibutton with-count star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/svenfuchs/rails-i18n/stargazers">
+      2,117
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fsvenfuchs%2Frails-i18n"
+        class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/svenfuchs/rails-i18n/network" class="social-count">
+        1,413
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/svenfuchs" class="url fn" itemprop="url" rel="author"><span itemprop="title">svenfuchs</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/svenfuchs/rails-i18n" class="js-current-repository js-repo-home-link">rails-i18n</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders" data-issue-count-url="/svenfuchs/rails-i18n/issues/counts">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="/svenfuchs/rails-i18n" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /svenfuchs/rails-i18n">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="/svenfuchs/rails-i18n/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /svenfuchs/rails-i18n/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class="js-issue-replace-counter"></span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="/svenfuchs/rails-i18n/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g p" data-selected-links="repo_pulls /svenfuchs/rails-i18n/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class="js-pull-replace-counter"></span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="/svenfuchs/rails-i18n/pulse/weekly" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /svenfuchs/rails-i18n/pulse/weekly">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="/svenfuchs/rails-i18n/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /svenfuchs/rails-i18n/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+  
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="input-group">
+    <input type="text" class="input-mini input-monospace js-url-field"
+           value="https://github.com/svenfuchs/rails-i18n.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/svenfuchs/rails-i18n.git" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="input-group">
+    <input type="text" class="input-mini input-monospace js-url-field"
+           value="https://github.com/svenfuchs/rails-i18n" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/svenfuchs/rails-i18n" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+                <a href="/svenfuchs/rails-i18n/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download svenfuchs/rails-i18n as a zip file"
+                   title="Download svenfuchs/rails-i18n as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+<div class="file-navigation">
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="minibutton select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    title="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/svenfuchs/rails-i18n/tree/master/rails/locale"
+                 data-name="master"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/svenfuchs/rails-i18n/tree/rails-2-3/rails/locale"
+                 data-name="rails-2-3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="rails-2-3">rails-2-3</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/svenfuchs/rails-i18n/tree/rails-3-x/rails/locale"
+                 data-name="rails-3-x"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="rails-3-x">rails-3-x</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+
+  <div class="button-group right">
+    <a href="/svenfuchs/rails-i18n/find/master" data-pjax data-hotkey="t" class="js-show-file-finder minibutton empty-icon tooltipped tooltipped-s" aria-label="Quickly jump between files">
+      <span class="octicon octicon-list-unordered"></span>
+    </a>
+    <a href="/svenfuchs/rails-i18n/commits/master/rails/locale" class="minibutton empty-icon tooltipped tooltipped-s" aria-label="Browse commits for this branch">
+      <span class="octicon octicon-history"></span>
+    </a>
+  </div>
+
+  <div class="breadcrumb"><span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/svenfuchs/rails-i18n" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">rails-i18n</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/svenfuchs/rails-i18n/tree/master/rails" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">rails</span></a></span><span class="separator"> / </span><strong class="final-path">locale</strong><span class="separator"> / </span><form action="/login?return_to=%2Fsvenfuchs%2Frails-i18n%2Ftree%2Fmaster%2Frails%2Flocale" aria-label="Sign in to make or propose changes" class="js-new-blob-form tooltipped tooltipped-e new-file-link" method="post"><span aria-label="Sign in to make or propose changes" class="js-new-blob-submit octicon octicon-plus" data-test-id="create-new-git-file" role="button"></span></form></div>
+
+</div>
+
+
+
+  
+  <div class="commit commit-tease js-details-container" >
+    <p class="commit-title ">
+        <a href="/svenfuchs/rails-i18n/commit/a50264b7d42a320e3c6d5ce3cf8dc3c01a773d2c" class="message" data-pjax="true" title="Merge pull request #435 from addavid/hebrew-short-long-retranslation
+
+changed too_long and too_short in he.yml file">Merge pull request</a> <a href="https://github.com/svenfuchs/rails-i18n/pull/435" class="issue-link" title="changed too_long and too_short in he.yml file">#435</a> <a href="/svenfuchs/rails-i18n/commit/a50264b7d42a320e3c6d5ce3cf8dc3c01a773d2c" class="message" data-pjax="true" title="Merge pull request #435 from addavid/hebrew-short-long-retranslation
+
+changed too_long and too_short in he.yml file">from addavid/hebrew-short-long-retranslation</a>
+        <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+    </p>
+      <div class="commit-desc"><pre>changed too_long and too_short in he.yml file</pre></div>
+    <div class="commit-meta">
+      <button aria-label="Copy SHA" class="js-zeroclipboard zeroclipboard-link" data-clipboard-text="a50264b7d42a320e3c6d5ce3cf8dc3c01a773d2c" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/svenfuchs/rails-i18n/commit/a50264b7d42a320e3c6d5ce3cf8dc3c01a773d2c" class="sha-block" data-pjax>latest commit <span class="sha">a50264b7d4</span></a>
+
+      <div class="authorship">
+        <img alt="Tsutomu Kuroda" class="gravatar" data-user="5565" height="20" src="https://avatars1.githubusercontent.com/u/5565?s=40" width="20" />
+        <span class="author-name"><a href="/kuroda" rel="contributor">kuroda</a></span>
+        authored <time class="updated" datetime="2014-07-29T00:17:22+09:00" is="relative-time">July 29, 2014</time>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="file-wrap">
+    <table class="files" data-pjax>
+        <tr class="up-tree">
+          <td></td>
+          <td><a href="/svenfuchs/rails-i18n/tree/master/rails" rel="nofollow" title="Go to parent directory">..</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      <tbody class=""
+  data-url="/svenfuchs/rails-i18n/file-list/master/rails/locale"
+  data-deferred-content-error="Failed to load latest commit information.">
+
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/tree/master/rails/locale/iso-639-2" class="js-directory-link" id="6969f2618301a277bae925151ffee5cf-8c5fb2edca21118b2a5780e2081bcdfd04a95e3c" title="iso-639-2">iso-639-2</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/af.yml" class="js-directory-link" id="f2bd50118d4daef7728841558ffcf169-ad1b23e0e4a5c0c856d585beb4f4f1a1de60a349" title="af.yml">af.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/e5f6751f51e3d9f2823adf0daea403ffa3b50eb7" class="message" data-pjax="true" title="Merged">Merged</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-05-19T22:41:29Z" is="time-ago">May 20, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ar.yml" class="js-directory-link" id="78ec405cd1c10de69cda2e44fc9da9a0-c6e6551eaf5d618c935e313aceaead2cd79bb8c8" title="ar.yml">ar.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/c948064402d480452d196ffa9d4deb8295a8fb22" class="message" data-pjax="true" title="Update ar.yml
+
+Fixed some issues and added missing translations. Should work with no problems this time">Update ar.yml</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-07T20:23:48Z" is="time-ago">July 07, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/az.yml" class="js-directory-link" id="5b37d4087a055c1306b8f944e0b5fef2-ac44e684b0cdebe76fa330097d779378e95480a8" title="az.yml">az.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/bg.yml" class="js-directory-link" id="e9f555b2db047e82c6269bb927c871cd-fa30600c70209de10d0a21494d67c371cf92064b" title="bg.yml">bg.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/bn.yml" class="js-directory-link" id="257ea4ee410cb03a4df346486d082561-1ec4fe4c2d55ae187dd4a67361f23eac7275540b" title="bn.yml">bn.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/bs.yml" class="js-directory-link" id="318e430e2180e664b2ccc62f46f4e4fe-beba53b740838ea2d65ca3c6e6af46796158207f" title="bs.yml">bs.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ca.yml" class="js-directory-link" id="3b7c1a3f9315779e2dee7330fc326c30-e630b4dfdcc8b2dd70461c3a3a1d59c240438688" title="ca.yml">ca.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/cs.yml" class="js-directory-link" id="bfd67ae829cfe732df85938550c7b6d9-7c779689993769fc7c9b8bca293228dd4d52fac3" title="cs.yml">cs.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/d15120d060036006204737ef554c05c1f3be0b88" class="message" data-pjax="true" title="update cs.yml
+
+Few incorrections fixed:
+* now names of days and months starts with lower-case letter
+* format of number is corrected
+
+New translations added.">update cs.yml</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-06-09T11:08:46Z" is="time-ago">June 09, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/cy.yml" class="js-directory-link" id="7f3ad13f45da9185498252e9cd46eb9a-c680c230a8fcb8512c188b7930a8f6a85f9ffefc" title="cy.yml">cy.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/da.yml" class="js-directory-link" id="b0a7a6b6821f06d36a26658358122156-37f8c636351d6dc8d6185ccc15e15ba01a8a15ff" title="da.yml">da.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/de-AT.yml" class="js-directory-link" id="f386f072ab67ae68a1d1dac36c7607a1-bcddd15e2cfd00e19fd748ef66c4140b1816c6bc" title="de-AT.yml">de-AT.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/de-CH.yml" class="js-directory-link" id="b039ca5f84d9e61014613fb2926af6cd-abd4ec053976c9e17f5abc82c735bfb1204d036e" title="de-CH.yml">de-CH.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/de.yml" class="js-directory-link" id="376e1985dec5312c6b8d9440647812b7-717fd801ee38179503d91375c8af241806aee93b" title="de.yml">de.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/el.yml" class="js-directory-link" id="a6573a6a23067558c9a45905fa6ddd60-22579602ff32be23cca089c5517da3855f032192" title="el.yml">el.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/en-AU.yml" class="js-directory-link" id="3caf33293444e33c8ee9601618727b72-bfec4144ebda0f65803d91a9c6345a44f6939d42" title="en-AU.yml">en-AU.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/en-CA.yml" class="js-directory-link" id="f23696fcd506d824dfb14b40161b3f1e-06cbed82dbee13ebf8c7d5be368bb1c8c349af1a" title="en-CA.yml">en-CA.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/en-GB.yml" class="js-directory-link" id="de1d55829fc6958f3c2469c23000b438-8b07b7b327c1f1035ae37ca98d6fbbdab7a00479" title="en-GB.yml">en-GB.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/en-IE.yml" class="js-directory-link" id="123e02556ee23275d5374b0f06c23e12-876aec4b481f13276c552e32663082c730b654c3" title="en-IE.yml">en-IE.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/en-IN.yml" class="js-directory-link" id="335514860d7f33e43629d0eed3cd02a0-7d668c2a3dbb92283489fb0858039558f59564c4" title="en-IN.yml">en-IN.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/en-NZ.yml" class="js-directory-link" id="8d6318080e59cf39c055b10a557a1f22-c27bb17dd9a778d627f71f9fb59d6b9088ce0678" title="en-NZ.yml">en-NZ.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/en-US.yml" class="js-directory-link" id="d733d1b1ed0ff6ac5d7e2d385ed4ede2-ba7d9b9cd64f22f2d24ee012e5c56e6ea17c8887" title="en-US.yml">en-US.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/en-ZA.yml" class="js-directory-link" id="6854f7cc3b16a8a5b1e750fc9b3eaadc-444f120f625fdf27e8c96fa626493425067ff475" title="en-ZA.yml">en-ZA.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/e5f6751f51e3d9f2823adf0daea403ffa3b50eb7" class="message" data-pjax="true" title="Merged">Merged</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-05-19T22:41:29Z" is="time-ago">May 19, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/en.yml" class="js-directory-link" id="6b488792cbc6bd5e9d964f0c6efe8314-e1de9aba5185b12dab4433c7a8df585f83d705b4" title="en.yml">en.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/eo.yml" class="js-directory-link" id="a454414747d4b7d375f2e2b9236b2972-4909ceeced89ff9895801d41cac73097c07bf4b3" title="eo.yml">eo.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-419.yml" class="js-directory-link" id="f42808bcfe316b119caf8ab6d8662b9d-15e831587648d123f03ecca04410e9a8c8fa825d" title="es-419.yml">es-419.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-AR.yml" class="js-directory-link" id="6782eddf52b2c0cc2c51c49ee489b542-bfe031fbc75aaf877f1437d14431d81813aaa017" title="es-AR.yml">es-AR.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-CL.yml" class="js-directory-link" id="5475b9ed2af5dce05be149b21127efe5-6bc804dda9bdcd7831fff98e7e98e800f0d626a0" title="es-CL.yml">es-CL.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-CO.yml" class="js-directory-link" id="9cf92bc083b1b40f9f84c608b48512fd-3720d035b041551c1ff0fd06f2d92cb538aa268d" title="es-CO.yml">es-CO.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-CR.yml" class="js-directory-link" id="b0c16d7fc9e099db36e3938caaef89bf-1f340e23cf3c33b5d139462f968fea76c64e1a43" title="es-CR.yml">es-CR.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-EC.yml" class="js-directory-link" id="041c721b864c4b91fe50556723314ac9-980c992db03dae1585b333dd5a4c2fa1bad5420c" title="es-EC.yml">es-EC.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-MX.yml" class="js-directory-link" id="bfb12ec722ca522301c05873c86f1451-5bf3ce2e8424e14c5a6246556bc161ff99ef076e" title="es-MX.yml">es-MX.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-PA.yml" class="js-directory-link" id="b556372db48e17fef06052cf5c230c25-b69178389db537d4c05574ab66f30520d4ded270" title="es-PA.yml">es-PA.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-PE.yml" class="js-directory-link" id="adcd396e7925d2ae1cf20713517b1e20-f35273bbf5d0d337fe17912ca846cc6b38e229d9" title="es-PE.yml">es-PE.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-US.yml" class="js-directory-link" id="ef8dd2ffa1bb9a1b3deca8058634c75e-5df75c5c1358f261c373854ee6abb542b676a808" title="es-US.yml">es-US.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/91967d94021cf38abe3b37cf8d88b4315974085f" class="message" data-pjax="true" title="Added es-US locale (same as es-419 and es-MX)">Added es-US locale (same as es-419 and es-MX)</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-05-19T10:22:24Z" is="time-ago">May 19, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es-VE.yml" class="js-directory-link" id="bdc194f90509e603ed2ccedeb25249ac-1520330634c37673a766fcde1488bbfe9427e159" title="es-VE.yml">es-VE.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/es.yml" class="js-directory-link" id="6241e980a0c80da173a7d22907ce3d36-39facbf23dbc3c02bffa9d70028279b43a724449" title="es.yml">es.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/et.yml" class="js-directory-link" id="2e3a0fc15ab2d374fa3121b64661832f-0efad98023e15c47a961f95267dd07d25a5a35ea" title="et.yml">et.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/eu.yml" class="js-directory-link" id="2e40dde189cc30f64cdfc6fd725d8ec7-51c76eaeb35e692dafd97e1b0c2374393a010d6b" title="eu.yml">eu.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/fa.yml" class="js-directory-link" id="eee46fdb8c57aaf7f71d660c51a5837e-852ae7dc8ff84189ab49ba6a9078133ce9ca6d79" title="fa.yml">fa.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/fi.yml" class="js-directory-link" id="6d6ba1eddec1be0d76f60a31eca9361e-79e26e476651e3c55d4e66962cf9ba849bb7164d" title="fi.yml">fi.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/fr-CA.yml" class="js-directory-link" id="88ab633d7078ea519b2fd2855f39cb3c-cfb019de7e5a251373908078a47b22b2ac07cd13" title="fr-CA.yml">fr-CA.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/95fca51f645ded0ce12eeecb371168bb937a0ac5" class="message" data-pjax="true" title="Correct French 24 hour notation.
+Fixes #437">Correct French 24 hour notation.</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-27T16:00:28Z" is="time-ago">July 27, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/fr-CH.yml" class="js-directory-link" id="8206e0a7275b20c48292b92773ccb6f6-b45324c4df00d14a0c73c18a1e948ac6bd8c3640" title="fr-CH.yml">fr-CH.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/95fca51f645ded0ce12eeecb371168bb937a0ac5" class="message" data-pjax="true" title="Correct French 24 hour notation.
+Fixes #437">Correct French 24 hour notation.</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-27T16:00:28Z" is="time-ago">July 27, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/fr.yml" class="js-directory-link" id="7e060bd249906f1e7b747b916b4c94e7-78005f6f50056af45fef7beb4d578460a4348858" title="fr.yml">fr.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/95fca51f645ded0ce12eeecb371168bb937a0ac5" class="message" data-pjax="true" title="Correct French 24 hour notation.
+Fixes #437">Correct French 24 hour notation.</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-27T16:00:28Z" is="time-ago">July 27, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/gl.yml" class="js-directory-link" id="b5961efc30a45fd7c6c89c5a33b5e6eb-c60266ba36572ab6506129444fdcabfcdc5059c7" title="gl.yml">gl.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/he.yml" class="js-directory-link" id="43ea963ba33558cfc85156911c9dcaf2-b86c6135d4ca66fb4f39c0131055f42fdedc2f50" title="he.yml">he.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/a50264b7d42a320e3c6d5ce3cf8dc3c01a773d2c" class="message" data-pjax="true" title="Merge pull request #435 from addavid/hebrew-short-long-retranslation
+
+changed too_long and too_short in he.yml file">Merge pull request</a> <a href="https://github.com/svenfuchs/rails-i18n/pull/435" class="issue-link" title="changed too_long and too_short in he.yml file">#435</a> <a href="/svenfuchs/rails-i18n/commit/a50264b7d42a320e3c6d5ce3cf8dc3c01a773d2c" class="message" data-pjax="true" title="Merge pull request #435 from addavid/hebrew-short-long-retranslation
+
+changed too_long and too_short in he.yml file">from addavid/hebrew-short-long-retranslation</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-28T15:17:22Z" is="time-ago">July 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/hi-IN.yml" class="js-directory-link" id="0684c67df842541801d9f5b7835d9365-1aa5ca51187485b417888e835ce0b1af7ba45a82" title="hi-IN.yml">hi-IN.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/hi.yml" class="js-directory-link" id="c0903b3d11d6a1a5c983d0ec4f0b8eb0-1b5b3c191ed4edd0369e3e67a68c7caa4f07f576" title="hi.yml">hi.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/hr.yml" class="js-directory-link" id="282c20d1b8c2161a2388c0e861f64545-7174ccb66dc9f5c7ee5bb70553e0f5d7114b902e" title="hr.yml">hr.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/7be5ad578d813c9a63514ec07ce01c829bb37891" class="message" data-pjax="true" title="Update Croatian date/time formats and a bit more
+
+Changes:
+
+* Updated date and time formats to be better aligned with formats used in Croatia.
+* Updated the February abbreviation to contain Unicode &quot;ǉ&quot; (alternative spelling: &quot;lj&quot;), which is a single letter in Croatian and thus inseparable. Using the Unicode character doesn&#39;t break the three-letter-abbreviation convention.
+* Updated very large number units to have correct unit names.
+* Removed the comma from &quot;last_word_connector&quot;, because it&#39;s not allowed with the &quot;i&quot; connector.">Update Croatian date/time formats and a bit more</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-28T13:20:29Z" is="time-ago">July 28, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/hu.yml" class="js-directory-link" id="d7fefb71f9583e883b57a439542e4fff-8d4008fe0d0ddd7ba854b117c5515c91bb3fd149" title="hu.yml">hu.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/id.yml" class="js-directory-link" id="70f23c5da557df58f704ea0fdeaa6114-75a63e33a0a6de7b69a89aac8040688eec89059b" title="id.yml">id.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/2511ac92b2c4d550108f2c2eec90056b928d29a0" class="message" data-pjax="true" title="Change &quot;noin&quot; to &quot;sekitar&quot;
+
+Because noin is not an Indonesian word">Change "noin" to "sekitar"</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-06-10T03:26:24Z" is="time-ago">June 10, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/is.yml" class="js-directory-link" id="36ca72d287655cfdfba5230064033034-07572c352c5daac0703e5965e8f687613b3b5ead" title="is.yml">is.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/it-CH.yml" class="js-directory-link" id="bf2f462b4c2e517178af2b6289d57ab6-28d3e1faf8aaf3845eb4bbbf3c80eb123b95b06b" title="it-CH.yml">it-CH.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/it.yml" class="js-directory-link" id="4915d8dc632eda77369a120cd094b7f1-2ad63e3bea3858d876eb39ed2c797a2b05a9140d" title="it.yml">it.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/56f668316c2b540e3b230411e4978e3b5d80cac1" class="message" data-pjax="true" title="Update it.yml">Update it.yml</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-24T17:00:51Z" is="time-ago">July 24, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml" class="js-directory-link" id="1ed9f14ed4470f140ed748a51423af88-f86780d09b390cc351b9ba0a4631a5607e75e447" title="ja.yml">ja.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/kn.yml" class="js-directory-link" id="9b19c464acfa70afb6a10069bffbc4fb-7126ca5e4971fecd1eb58aec1365a3b29627d4c9" title="kn.yml">kn.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ko.yml" class="js-directory-link" id="225f5b4f0d4543fd330c0b26c842747a-e508c4799832df1f72cb5dc55bced7296b2cce01" title="ko.yml">ko.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/29caf0b7001640449a44b3d3979c350497c9ff3a" class="message" data-pjax="true" title="Remove duplicate month symbol in korean
+
+Previous format `&#39;%Y년 %B월 %d일, %H시 %M분 %S초 %Z&#39;` renders:
+
+2014년 **6월월** 12일, 12시 30분 00초 +09:00
+
+In this case, the 월 char is incorrectly printed twice. By changing %B to %m we can avoid this.">Remove duplicate month symbol in korean</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-06-02T15:17:57Z" is="time-ago">June 03, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/lo.yml" class="js-directory-link" id="6995ffc93b2d2ca662f7e8a17cfb38e9-4060df8746366ea6612011277318676474de9f56" title="lo.yml">lo.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/lt.yml" class="js-directory-link" id="86a9fd1eaf00a0ada3add808db414ebc-5d34b738f548583f5fe86221b9da171ca0f7b505" title="lt.yml">lt.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/lv.yml" class="js-directory-link" id="5f27fd0cd74055d119f7ee1c7bb56573-4f813bac99b4ba3b5c28625dad8bfa081f8acb9d" title="lv.yml">lv.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/mk.yml" class="js-directory-link" id="8c15dc08be68acd3b7a473bd53acfa8a-ecf0ffe40d4b8089e84f7461777303d4c3fc347e" title="mk.yml">mk.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/mn.yml" class="js-directory-link" id="a1b1afa6477b748f5bd712c5f894d53e-89b98d9afbed750aed26469ec524d196936c781a" title="mn.yml">mn.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ms.yml" class="js-directory-link" id="fa24164fd6bedd68f5d2ed51b21e3a1e-b0ad644e1c91db80fc13fef375d8dae9b74d83cb" title="ms.yml">ms.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/nb.yml" class="js-directory-link" id="9d8bb94ae853ed28307c0500db8f2f82-ecb458305af62d65a4308556e186f5db1d471da4" title="nb.yml">nb.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/abfebcfbab9a76afa46415fd6c9e8dcb6d74209c" class="message" data-pjax="true" title="Updated translations, Norwegian bokmål (nb)">Updated translations, Norwegian bokmål (nb)</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-06-03T13:01:08Z" is="time-ago">June 03, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ne.yml" class="js-directory-link" id="73e01ac2e5c31af467209a9e172643a9-f3afa465312f2736d701beebc922bed496fe5d83" title="ne.yml">ne.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/nl.yml" class="js-directory-link" id="04aeaf1dea2fa3ffebae3b9abe7286a1-2cee594f5b53052a3345b5ece39b4c151fa485df" title="nl.yml">nl.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/3e207d0a8275870019f14c4a8d4d9a32aace043d" class="message" data-pjax="true" title="Update errors.messages.confirmation
+
+Now matches en.yml, show attribute name of confirmation in message.
+Previously it stated &quot;doesn&#39;t match confirmation&quot;, but this is incorrect as the message is shown at the confirmation field.">Update errors.messages.confirmation</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-05-01T14:03:14Z" is="time-ago">May 01, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/nn.yml" class="js-directory-link" id="07b965dba3b82056f9390e32af343c2b-2d6a76a89884629f56c6cea57f735212e7dc861d" title="nn.yml">nn.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/9b732e3d0ae24451c794a4458c518684779a6a6c" class="message" data-pjax="true" title="Updated nn translation">Updated nn translation</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-06-03T13:23:13Z" is="time-ago">June 03, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/or.yml" class="js-directory-link" id="af2d566af589866675b5f7ceeed5c7e7-cd49c28e82610685f3f8f6518924b669fe485a9e" title="or.yml">or.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/pl.yml" class="js-directory-link" id="28b165c4e948e68f67c5df5ad9b58975-dbfeb93858e36bfc2cab29358ccaec557fb31722" title="pl.yml">pl.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/pt-BR.yml" class="js-directory-link" id="01d0961fc0370bb99b5f7cf2f9f6538f-db922aa07fd06a67334fd95a5371116b47960fe9" title="pt-BR.yml">pt-BR.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/pt.yml" class="js-directory-link" id="8c955cf668412050fd945fb579312020-c6395ad9cccc591a85d64b5898203f2768eadce4" title="pt.yml">pt.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/rm.yml" class="js-directory-link" id="478834f77103b365dd49e24df544193a-3d5388b00e0214e7c1a674b73fbd24a1a2f26933" title="rm.yml">rm.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ro.yml" class="js-directory-link" id="57d4227fd7c3da9a62397e998ee98d9c-fdaa12c9880733ba33e12712b817c328da23ca1a" title="ro.yml">ro.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ru.yml" class="js-directory-link" id="b28b4ae5f95b0056acebb425d39b59c5-b55c38deec1aaedbb6c898f7a7cd6b2fcedc2edc" title="ru.yml">ru.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/45bc8b3fc198becfecd76ed4b36e77b65a70a031" class="message" data-pjax="true" title="Complete `ru` locale:
+* add errors.messages.present
+* add errors.messages.restrict_dependent_destroy.*
+* add errors.messages.other_than
+* add number.percentage.format.format">Complete `ru` locale:</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-02T08:31:47Z" is="time-ago">July 02, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/sk.yml" class="js-directory-link" id="730afd063e4c4daee739fcd21ef619da-2c2a80c3000a235e6556f717f4363a0da0a82297" title="sk.yml">sk.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/sl.yml" class="js-directory-link" id="74d3fbb455f6546f10ba1fbac4b6db0b-b11cde8bb686f0f4768e1f75599ef53827860ec1" title="sl.yml">sl.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/sr.yml" class="js-directory-link" id="ea459532e5d2337618162fd0fc5b9559-057e9b5f39f69202b08ed82102e046c4f8296dff" title="sr.yml">sr.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/sv.yml" class="js-directory-link" id="fb0eac45438809a5db6283db8853df2d-279c31a7fce13c870bac9e1d866b3ce9c6f1f36b" title="sv.yml">sv.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/sw.yml" class="js-directory-link" id="1ab3839f41595e2b4dba96d1bb0483ad-365d7d30cb38d79899a3ac930eb1af2da30f83d0" title="sw.yml">sw.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ta.yml" class="js-directory-link" id="682e63b71f70068151e83d12ff6fea55-fa01485783f4faef604c34700f08650e098b52fb" title="ta.yml">ta.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/th.yml" class="js-directory-link" id="51632a3dded120e85cf01db4ed189f89-d007b7d93c9309b486b7e4bef8c5635a5173c575" title="th.yml">th.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/tl.yml" class="js-directory-link" id="bfbecf5074d78203c3f0b32c081145d7-38e737b08b00672c8bcdc229da792245745b6b5c" title="tl.yml">tl.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/tr.yml" class="js-directory-link" id="97a4b1322536dc857c832144fc0ef550-ac591fb3f0529e07cae382005f6139a6e0a976bf" title="tr.yml">tr.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/7b89f86b18b74d1b5f16360f5cbf5a129882bcb4" class="message" data-pjax="true" title="All tests passed for TR translations">All tests passed for TR translations</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-08T13:12:15Z" is="time-ago">July 08, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/uk.yml" class="js-directory-link" id="92fba970196e94a5679dd671a91f2dba-4269c3fa261fa881aff7d1ce51f1f6473b90ef5e" title="uk.yml">uk.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/ur.yml" class="js-directory-link" id="71437951f25891680a68449a771ef395-aad09b685c1ac2c969f90fec6d3dfcbb7e84d6ae" title="ur.yml">ur.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/uz.yml" class="js-directory-link" id="f387f06a266a37618812d2de66af942e-11d6ce0a5783372f47ac13f07d730adccd23ab74" title="uz.yml">uz.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/vi.yml" class="js-directory-link" id="28023c93587cc8fb5079e1ac2dfc3d41-de868fdced7f47762412bbcb89910fd39d23eb85" title="vi.yml">vi.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/62744e509bc65b2a505c766a6d11ae9a883b22a6" class="message" data-pjax="true" title="Update missing translation for Vietnamese">Update missing translation for Vietnamese</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-07-21T07:53:36Z" is="time-ago">July 21, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/wo.yml" class="js-directory-link" id="3c4fb7830863128ccc7c8e298985a1c4-4741dfc5484ba0ba0dc8406338ba8a0cf566ee56" title="wo.yml">wo.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/zh-CN.yml" class="js-directory-link" id="808dcbd9a4c16687d72c77d190e69754-6ac82a9e199839df7ff65e700d11f298d3c811cd" title="zh-CN.yml">zh-CN.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/43ad8050dd6f49f6aad5a4a2dab81def5a8a2113" class="message" data-pjax="true" title="Improve zh-CN.yml
+
+Convert traditional characters to simplified Chinese.">Improve zh-CN.yml</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-06-13T14:31:33Z" is="time-ago">June 13, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/zh-HK.yml" class="js-directory-link" id="0ce31de609f4e7fa24e74fe593642b08-d8b4ced5727397207a7e9fb9d3bcb3f309230033" title="zh-HK.yml">zh-HK.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/zh-TW.yml" class="js-directory-link" id="fa5c785dd2d0bbc3d98c1d83f10ae2e3-3c23992a36ce8f40d5e9f400365795e9e8d30054" title="zh-TW.yml">zh-TW.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/svenfuchs/rails-i18n/blob/master/rails/locale/zh-YUE.yml" class="js-directory-link" id="e464f01185cb46c4853d8708dc3133ac-7639198ce44fc1675d837df94108bf3ad582dd70" title="zh-YUE.yml">zh-YUE.yml</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target ">
+          <a href="/svenfuchs/rails-i18n/commit/655e9c1355082ac100e8ea546fd5eaee5e417468" class="message" data-pjax="true" title="Remove activemodel and activerecord namespaces">Remove activemodel and activerecord namespaces</a>
+        </span>
+      </td>
+      <td class="age">
+        <span class="css-truncate css-truncate-target"><time datetime="2014-04-29T13:12:38Z" is="time-ago">April 29, 2014</time></span>
+      </td>
+    </tr>
+</tbody>
+
+    </table>
+  </div>
+
+
+  
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.04911s from github-fe125-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents js-suggester-field" placeholder=""></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-12d5fda141e78e513749dddbc56445fe172cbd9a.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-41dd8db0828df06456337006ee18d4eba9443071.js" type="text/javascript"></script>
+      
+      
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>
+
