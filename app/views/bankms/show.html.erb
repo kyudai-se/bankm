@@ -32,7 +32,7 @@
 
 <p>
   <strong>銀行コード:</strong>
-  <%= @bankm.bank_cd %>
+  <%= number_with_precision(@bankm.bank_cd, precision: 0) %>
 </p>
 
 <p>

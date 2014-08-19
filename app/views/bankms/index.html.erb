@@ -25,7 +25,7 @@
         <td><%= bankm.edtdate.try(:strftime,'%Y-%m-%d %H:%M:%S') %></td>
         <td><%= bankm.edtmcn %></td>
         <td><%= bankm.edtclt %></td>
-        <td><%= bankm.bank_cd %></td>
+        <td><%= number_with_precision(bankm.bank_cd, precision: 0) %></td>
         <td><%= bankm.bank_j %></td>
         <td><%= bankm.bank_a %></td>
         <td><%= bankm.bank_k %></td>
