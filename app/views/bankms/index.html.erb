@@ -29,9 +29,9 @@
         <td><%= bankm.bank_j %></td>
         <td><%= bankm.bank_a %></td>
         <td><%= bankm.bank_k %></td>
-        <td><%= link_to 'Show', bankm %></td>
-        <td><%= link_to 'Edit', edit_bankm_path(bankm) %></td>
-        <td><%= link_to 'Destroy', bankm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '確認', bankm %></td>
+        <td><%= link_to '編集', edit_bankm_path(bankm) %></td>
+        <td><%= link_to '削除', bankm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -39,4 +39,4 @@
 
 <br>
 
-<%= link_to 'New Bankm', new_bankm_path %>
+<%= link_to '新規登録', new_bankm_path %>
