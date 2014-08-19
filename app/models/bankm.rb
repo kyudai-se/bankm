@@ -10,9 +10,9 @@ class Bankm < ActiveRecord::Base
   validates :bank_cd, presence: true, length: { maximum: 04 }, uniqueness: true,
             numericality: true
   validates :bank_j,  presence: true, length: { maximum: 40 }, uniqueness: true,
-            format: { with: /\A[\p{Han}\p{Hiragana}\p{Katakana}]+\z/, allow_blank: true, message: 'は漢字、ひらがな、カタカナのいずれかで入力してください' }
+            format: { with: /\A[\p{Han}\p{Hiragana}\p{Katakana}A-Za-zＡ-Ｚ-ー]+\z/, allow_blank: true, message: 'はアルファベット、漢字、ひらがな、カタカナのいずれかで入力してください' }
   validates :bank_a,  presence: true, length: { maximum: 40 }, uniqueness: true,
-            format: { with: /\A[\p{Han}\p{Hiragana}\p{Katakana}]+\z/, allow_blank: true, message: 'は漢字、ひらがな、カタカナのいずれかで入力してください' } 
+            format: { with: /\A[\p{Han}\p{Hiragana}\p{Katakana}A-Za-zＡ-Ｚ-ー]+\z/, allow_blank: true, message: 'はアルファベット、漢字、ひらがな、カタカナのいずれかで入力してください' } 
   validates :bank_k,  presence: true, length: { maximum: 40 }, uniqueness: true,
-            format: { with: /\A[\p{Katakana}\ﾞ\u30fc]+\z/, allow_blank: true, message: 'はカタカナで入力してください' }
+            format: { with: /\A[A-Za-zＡ-Ｚ\p{Katakana}\ﾞ\u30fc-]+\z/, allow_blank: true, message: 'はアルファベットかカタカナで入力してください' }
 end

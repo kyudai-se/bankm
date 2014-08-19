@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140819024804) do
+ActiveRecord::Schema.define(version: 20140819064243) do
 
   create_table "aream", force: true do |t|
     t.string   "entmcn",  limit: 20,                         default: "", null: false
@@ -27,16 +27,16 @@ ActiveRecord::Schema.define(version: 20140819024804) do
   end
 
   create_table "bankm", force: true do |t|
-    t.string   "entmcn",  limit: 20, default: "", null: false
-    t.string   "entclt",  limit: 20, default: "", null: false
-    t.string   "edtmcn",  limit: 20, default: "", null: false
-    t.string   "edtclt",  limit: 20, default: "", null: false
+    t.string   "entmcn",  limit: 20, default: "",  null: false
+    t.string   "entclt",  limit: 20, default: "",  null: false
+    t.string   "edtmcn",  limit: 20, default: "",  null: false
+    t.string   "edtclt",  limit: 20, default: "",  null: false
     t.datetime "entdate"
     t.datetime "edtdate"
-    t.decimal  "bank_cd"
-    t.string   "bank_j"
-    t.string   "bank_a"
-    t.string   "bank_k"
+    t.string   "bank_j",  limit: 40, default: "",  null: false
+    t.string   "bank_a",  limit: 40, default: "",  null: false
+    t.string   "bank_k",  limit: 40, default: "",  null: false
+    t.decimal  "bank_cd",            default: 0.0, null: false
   end
 
 end
