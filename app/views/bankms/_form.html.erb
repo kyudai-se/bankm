@@ -28,7 +28,7 @@
   </div>
   <div class="field">
     <%= f.label :銀行コード %><br>
-    <%= f.text_field :bank_cd, {style: "ime-mode:disabled"} %>
+    <%= f.text_field number_with_precision(:bank_cd, precision: 0), {style: "ime-mode:disabled"} %>
   </div>
   <div class="field">
     <%= f.label :銀行名 %><br>

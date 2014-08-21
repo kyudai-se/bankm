@@ -27,7 +27,6 @@ class BankmsController < ApplicationController
   # POST /bankms.json
   def create
     @bankm = Bankm.new(bankm_params)
-    @bankm.bank_cd.round
     @bankm.entdate = Time.now
     respond_to do |format|
       if @bankm.save
@@ -43,7 +42,6 @@ class BankmsController < ApplicationController
   # PATCH/PUT /bankms/1
   # PATCH/PUT /bankms/1.json
   def update
-    @bankm.bank_cd.round
     @bankm.edtdate = Time.now
     respond_to do |format|
       if @bankm.update(bankm_params)
